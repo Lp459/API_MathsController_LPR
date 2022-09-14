@@ -27,7 +27,7 @@ module.exports =
             return new Promise(async (resolve) => {
                 if (HttpContext.req.method === 'OPTIONS') {
                     log('CORS preflight verifications');
-                    HttpContext.response.end();
+                    HttpContext.response.end(); 
                     resolve(true);
                 }
                 resolve(false);
